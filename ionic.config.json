@@ -1,0 +1,7 @@
+{
+  "name": "SpeechRecognition",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
