@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'speech',
     pathMatch: 'full'
+  },
+  {
+    path: 'speech',
+    loadChildren: () => import('./speech/speech.module').then( m => m.SpeechPageModule)
   },
 ];
 

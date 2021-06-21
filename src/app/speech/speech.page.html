@@ -1,0 +1,9 @@
+<ion-content>
+  <ion-button (click)="getPermission()">getPermission</ion-button><br>
+  <ion-button (click)="startListening()">startListening</ion-button><br>
+  <ion-button (click)="stopListening()" *ngIf="isIos()">stopListening</ion-button><br><br>
+  <ion-label>{{header}}</ion-label>
+  <ion-list>
+    <ion-item *ngFor="let match of matches">{{match}}</ion-item>
+  </ion-list>
+</ion-content>
